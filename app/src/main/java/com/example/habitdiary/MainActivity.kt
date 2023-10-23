@@ -10,21 +10,22 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
+import com.example.habitdiary.ui.navigation.HabitDiaryNavigation
 import com.example.habitdiary.ui.theme.HabitDiaryTheme
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent {
-            HabitDiaryTheme(content = {
+            HabitDiaryTheme(dynamicColor = false) {
                 // A surface container using the 'background' color from the theme
                 Surface(
                     modifier = Modifier.fillMaxSize(),
-                    color = MaterialTheme.colorScheme.background
+                    color = MaterialTheme.colorScheme.background,
                 ) {
-                    Greeting("Hola Mundo")
+                    HabitDiaryNavigation()
                 }
-            }, colorScheme = MaterialTheme.colorScheme)
+            }
         }
     }
 }
