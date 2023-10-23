@@ -10,7 +10,6 @@ android {
     defaultConfig {
         applicationId = "com.example.habitdiary"
         minSdk = 28
-        //noinspection EditedTargetSdkVersion
         targetSdk = 34
         versionCode = 1
         versionName = "1.0"
@@ -31,17 +30,17 @@ android {
         }
     }
     compileOptions {
-        sourceCompatibility = JavaVersion.VERSION_1_8
-        targetCompatibility = JavaVersion.VERSION_1_8
+        sourceCompatibility = JavaVersion.VERSION_17
+        targetCompatibility = JavaVersion.VERSION_17
     }
     kotlinOptions {
-        jvmTarget = "1.8"
+        jvmTarget = JavaVersion.VERSION_17
     }
     buildFeatures {
         compose = true
     }
     composeOptions {
-        kotlinCompilerExtensionVersion = "1.4.3"
+        kotlinCompilerExtensionVersion = "1.5.3"
     }
     packaging {
         resources {
@@ -64,7 +63,7 @@ dependencies {
 
     // Libreria Accompanish for Navigation
 
-    implementation("com.google.accompanist:accompanist-navigation-material:0.30.1")
+    implementation("com.google.accompanist:accompanist-navigation-material:0.32.0")
 
     // Test
     testImplementation("junit:junit:4.13.2")
