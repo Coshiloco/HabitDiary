@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">HabitDiary</string>
+
+
+    <!--WelcomeScreen-->
+    <string name="welcome_screen_habit_main_title">HELLO!</string>
+    <string name="welcome_screen_habit_main_title_second">WELCOME TO HABIT-DIARY</string>
+
+
 </resources>

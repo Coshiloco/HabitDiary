@@ -10,7 +10,9 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.navigation.NavController
+import com.example.habitdiary.ui.customItems.CustomSpacer
 import com.example.habitdiary.ui.customItems.HabitLogoImage
+import com.example.habitdiary.ui.customItems.HabitMainTitle
 
 @Composable
 fun WelcomeScreen(
@@ -30,6 +32,8 @@ fun WelcomeContent(modifier: Modifier) {
         horizontalAlignment = Alignment.CenterHorizontally
     ) {
         HabitLogoImage()
+        CustomSpacer(size = 50.dp)
+        HabitMainTitle()
     }
 
 }
