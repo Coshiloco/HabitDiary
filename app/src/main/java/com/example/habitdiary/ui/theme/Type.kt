@@ -10,3 +10,13 @@ val primaryHabitMainTitleBoldDisplayS = TextStyle(
     fontFamily = FontFamily(Font(R.font.opensans_condensed_bold)),
     fontSize = 33.sp
 )
+
+val secundaryHabitSubtitleRegularBodyL = TextStyle(
+    fontFamily = FontFamily(Font(R.font.opensans_condensed_regular)),
+    fontSize = 16.sp
+)
+
+val secondaryHabitButtonBoldHeadLineS = TextStyle(
+    fontFamily = FontFamily(Font(R.font.opensans_condensed_semibold)),
+    fontSize = 19.sp
+)

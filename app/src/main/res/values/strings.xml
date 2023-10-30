@@ -5,6 +5,8 @@
     <!--WelcomeScreen-->
     <string name="welcome_screen_habit_main_title">HELLO!</string>
     <string name="welcome_screen_habit_main_title_second">WELCOME TO HABIT-DIARY</string>
+    <string name="welcome_screen_habit_subtitle">Create an account or login to start</string>
+    <string name="welcome_screen_habit_login_register">Login Or Register with Email</string>
 
 
 </resources>

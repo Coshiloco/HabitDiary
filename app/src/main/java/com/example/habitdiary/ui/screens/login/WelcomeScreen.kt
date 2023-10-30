@@ -10,20 +10,29 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.navigation.NavController
+import com.example.habitdiary.R
 import com.example.habitdiary.ui.screens.uiCommonComponents.CustomSpacer
+import com.example.habitdiary.ui.screens.uiCommonComponents.HabitButton
 import com.example.habitdiary.ui.screens.uiCommonComponents.HabitLogoImage
 import com.example.habitdiary.ui.screens.uiCommonComponents.HabitMainTitle
+import com.example.habitdiary.ui.screens.uiCommonComponents.HabitSubtitle
 
 @Composable
 fun WelcomeScreen(
     navController: NavController,
     modifier: Modifier = Modifier
 ) {
-    WelcomeContent(modifier)
+    WelcomeContent(
+        modifier,
+        onLoginEmailClick = {}
+    )
 }
 
 @Composable
-fun WelcomeContent(modifier: Modifier) {
+fun WelcomeContent(
+    modifier: Modifier,
+    onLoginEmailClick: () -> Unit
+) {
     Column(
         modifier = modifier
             .fillMaxSize()
@@ -34,6 +43,13 @@ fun WelcomeContent(modifier: Modifier) {
         HabitLogoImage()
         CustomSpacer(size = 50.dp)
         HabitMainTitle()
+        CustomSpacer(size = 8.dp)
+        HabitSubtitle(Modifier.align(Alignment.Start))
+        CustomSpacer(size = 50.dp)
+        HabitButton(
+            text = R.string.welcome_screen_habit_login_register,
+            onClick = onLoginEmailClick
+        )
     }
 
 }
@@ -41,7 +57,7 @@ fun WelcomeContent(modifier: Modifier) {
 @Preview(showBackground = true, showSystemUi = true)
 @Composable
 fun WelcomeScreenPreview() {
-    WelcomeContent(modifier = Modifier)
+    WelcomeContent(modifier = Modifier, onLoginEmailClick = {})
 }
 
 
