@@ -1,4 +1,4 @@
-package com.example.habitdiary.ui.customItems
+package com.example.habitdiary.ui.screens.uiCommonComponents
 
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxWidth

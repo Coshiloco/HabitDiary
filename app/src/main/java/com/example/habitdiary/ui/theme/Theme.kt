@@ -117,6 +117,7 @@ fun HabitDiaryTheme(
 
     MaterialTheme(
         colorScheme = colorScheme,
-        content = content,
+        shapes = Shapes,
+        content = content
     )
 }

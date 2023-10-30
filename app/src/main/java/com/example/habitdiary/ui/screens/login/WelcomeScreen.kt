@@ -10,9 +10,9 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.navigation.NavController
-import com.example.habitdiary.ui.customItems.CustomSpacer
-import com.example.habitdiary.ui.customItems.HabitLogoImage
-import com.example.habitdiary.ui.customItems.HabitMainTitle
+import com.example.habitdiary.ui.screens.uiCommonComponents.CustomSpacer
+import com.example.habitdiary.ui.screens.uiCommonComponents.HabitLogoImage
+import com.example.habitdiary.ui.screens.uiCommonComponents.HabitMainTitle
 
 @Composable
 fun WelcomeScreen(

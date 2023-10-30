@@ -26,7 +26,7 @@ fun HabitDiaryNavigation() {
                 WelcomeScreen(navController = navController)
             }
             composable(HabitDiaryRoutes.HomeScreen.route) {
-                
+
             }
         }
     }
