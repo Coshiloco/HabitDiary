@@ -37,7 +37,7 @@ fun HabitButton(
         shape = RoundedCornerShape(16.dp),
         colors = ButtonDefaults.buttonColors(
             containerColor = Color(255, 227, 140),
-            contentColor = Color(255, 255, 255, 255)
+            contentColor = Color(0, 0, 0)
         )
     ) {
         Box(
@@ -53,7 +53,7 @@ fun HabitButton(
             Text(
                 text = stringResource(id = text),
                 modifier = Modifier.align(Alignment.Center),
-                color = Color(255, 255, 255, 255),
+                color = Color(0, 0, 0),
                 style = secondaryHabitButtonBoldHeadLineS
             )
         }

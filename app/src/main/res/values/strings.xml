@@ -9,4 +9,7 @@
     <string name="welcome_screen_habit_login_register">Login Or Register with Email</string>
 
 
+    <!--General-->
+    <string name="login_screen_google_sign_in">Sign In with Google</string>
+
 </resources>

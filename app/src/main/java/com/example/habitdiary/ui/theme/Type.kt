@@ -20,3 +20,8 @@ val secondaryHabitButtonBoldHeadLineS = TextStyle(
     fontFamily = FontFamily(Font(R.font.opensans_condensed_semibold)),
     fontSize = 19.sp
 )
+
+val secondaryHabitButtonSemiBoldHeadLineS = TextStyle(
+    fontFamily = FontFamily(Font(R.font.opensans_condensed_semibold)),
+    fontSize = 19.sp
+)

@@ -12,6 +12,7 @@ import androidx.compose.ui.unit.dp
 import androidx.navigation.NavController
 import com.example.habitdiary.R
 import com.example.habitdiary.ui.screens.uiCommonComponents.CustomSpacer
+import com.example.habitdiary.ui.screens.uiCommonComponents.GoogleButton
 import com.example.habitdiary.ui.screens.uiCommonComponents.HabitButton
 import com.example.habitdiary.ui.screens.uiCommonComponents.HabitLogoImage
 import com.example.habitdiary.ui.screens.uiCommonComponents.HabitMainTitle
@@ -24,14 +25,16 @@ fun WelcomeScreen(
 ) {
     WelcomeContent(
         modifier,
-        onLoginEmailClick = {}
+        onLoginEmailClick = {},
+        onLoginGoogleClick = {}
     )
 }
 
 @Composable
 fun WelcomeContent(
     modifier: Modifier,
-    onLoginEmailClick: () -> Unit
+    onLoginEmailClick: () -> Unit,
+    onLoginGoogleClick: () -> Unit
 ) {
     Column(
         modifier = modifier
@@ -50,6 +53,10 @@ fun WelcomeContent(
             text = R.string.welcome_screen_habit_login_register,
             onClick = onLoginEmailClick
         )
+        CustomSpacer(size = 25.dp)
+        GoogleButton(
+            onClick = onLoginGoogleClick
+        )
     }
 
 }
@@ -57,7 +64,7 @@ fun WelcomeContent(
 @Preview(showBackground = true, showSystemUi = true)
 @Composable
 fun WelcomeScreenPreview() {
-    WelcomeContent(modifier = Modifier, onLoginEmailClick = {})
+    WelcomeContent(modifier = Modifier, onLoginEmailClick = {}, onLoginGoogleClick = {})
 }
 
 
