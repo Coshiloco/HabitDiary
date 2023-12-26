@@ -9,6 +9,7 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
+import androidx.hilt.navigation.compose.hiltViewModel
 import androidx.navigation.NavController
 import com.example.habitdiary.R
 import com.example.habitdiary.ui.screens.uiCommonComponents.CustomSpacer
@@ -21,6 +22,7 @@ import com.example.habitdiary.ui.screens.uiCommonComponents.HabitSubtitle
 @Composable
 fun WelcomeScreen(
     navController: NavController,
+    viewModel: WelcomeViewModel = hiltViewModel(),
     modifier: Modifier = Modifier
 ) {
     WelcomeContent(
