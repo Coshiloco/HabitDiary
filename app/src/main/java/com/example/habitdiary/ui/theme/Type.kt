@@ -1,34 +1,27 @@
 package com.example.habitdiary.ui.theme
 
-import androidx.compose.material3.Typography
 import androidx.compose.ui.text.TextStyle
+import androidx.compose.ui.text.font.Font
 import androidx.compose.ui.text.font.FontFamily
-import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.sp
+import com.example.habitdiary.R
 
-// Set of Material typography styles to start with
-val Typography = Typography(
-    bodyLarge = TextStyle(
-        fontFamily = FontFamily.Default,
-        fontWeight = FontWeight.Normal,
-        fontSize = 16.sp,
-        lineHeight = 24.sp,
-        letterSpacing = 0.5.sp
-    )
-    /* Other default text styles to override
-    titleLarge = TextStyle(
-        fontFamily = FontFamily.Default,
-        fontWeight = FontWeight.Normal,
-        fontSize = 22.sp,
-        lineHeight = 28.sp,
-        letterSpacing = 0.sp
-    ),
-    labelSmall = TextStyle(
-        fontFamily = FontFamily.Default,
-        fontWeight = FontWeight.Medium,
-        fontSize = 11.sp,
-        lineHeight = 16.sp,
-        letterSpacing = 0.5.sp
-    )
-    */
+val primaryHabitMainTitleBoldDisplayS = TextStyle(
+    fontFamily = FontFamily(Font(R.font.opensans_condensed_bold)),
+    fontSize = 33.sp
+)
+
+val secundaryHabitSubtitleRegularBodyL = TextStyle(
+    fontFamily = FontFamily(Font(R.font.opensans_condensed_regular)),
+    fontSize = 16.sp
+)
+
+val secondaryHabitButtonBoldHeadLineS = TextStyle(
+    fontFamily = FontFamily(Font(R.font.opensans_condensed_semibold)),
+    fontSize = 19.sp
+)
+
+val secondaryHabitButtonSemiBoldHeadLineS = TextStyle(
+    fontFamily = FontFamily(Font(R.font.opensans_condensed_semibold)),
+    fontSize = 19.sp
 )
