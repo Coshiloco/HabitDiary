@@ -11,5 +11,6 @@
 
     <!--General-->
     <string name="login_screen_google_sign_in">Sign In with Google</string>
+    <string name="salir">Salir\n</string>
 
 </resources>
