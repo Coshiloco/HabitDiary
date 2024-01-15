@@ -1,9 +1,7 @@
 package com.example.habitdiary.ui.screens.login
 
 import androidx.compose.foundation.layout.Arrangement
-import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
-import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.padding
 import androidx.compose.material3.ExperimentalMaterial3Api
@@ -49,12 +47,7 @@ fun WelcomeContent(
     onLoginEmailClick: () -> Unit,
     onLoginGoogleClick: () -> Unit
 ) {
-    Row {
 
-    }
-    Box {
-
-    }
     Column(
         modifier = modifier
             .fillMaxSize()
