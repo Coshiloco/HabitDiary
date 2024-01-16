@@ -25,9 +25,9 @@ import com.example.habitdiary.ui.screens.uiCommonComponents.HabitSubtitle
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun WelcomeScreen(
+    modifier: Modifier = Modifier,
     navController: NavController,
     viewModel: WelcomeViewModel = hiltViewModel(),
-    modifier: Modifier = Modifier
 ) {
 
 
